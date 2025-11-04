@@ -19,8 +19,8 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "Prompt", "Sarabun", "system-ui", "sans-serif"],
-        heading: ["var(--font-geist-sans)", "Prompt", "system-ui", "sans-serif"],
+        sans: ["var(--font-noto-sans-thai)", "Noto Sans Thai", "system-ui", "sans-serif"],
+        heading: ["var(--font-noto-sans-thai)", "Noto Sans Thai", "system-ui", "sans-serif"],
       },
       colors: {
         primary: {

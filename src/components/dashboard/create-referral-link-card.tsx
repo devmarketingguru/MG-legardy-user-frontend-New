@@ -23,16 +23,16 @@ export function CreateReferralLinkCard({ referralUrl }: CreateReferralLinkCardPr
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="section-card border border-[#d6b98c]/70 p-6 shadow-card">
-        <div className="flex items-center justify-between border-b border-[#d6b98c]/60 pb-4">
+      <div className="section-card border border-[rgb(59_130_246/0.5)] p-6 shadow-card">
+        <div className="flex items-center justify-between border-b border-[rgb(59_130_246/0.5)] pb-4">
           <h3 className="flex items-center gap-3 text-lg font-semibold text-slate-900">
-            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1f3a68] text-[#c6a269] shadow-lg shadow-[#1f3a68]/25">
-              <LinkIcon className="h-5 w-5" />
+            <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[rgb(59_130_246)] text-white shadow-lg shadow-[rgb(59_130_246/0.25)]">
+              <LinkIcon className="h-5 w-5 text-white" />
             </span>
             ลิงก์เชิญเพื่อนของคุณ
           </h3>
-          <span className="inline-flex items-center gap-1 rounded-full bg-[#f8f3ea] px-3 py-1 text-xs font-medium text-[#634f29]">
-            <Sparkles className="h-4 w-4 text-[#c6a269]" />
+          <span className="inline-flex items-center gap-1 rounded-full bg-[rgb(59_130_246/0.1)] px-3 py-1 text-xs font-medium text-[rgb(59_130_246)]">
+            <Sparkles className="h-4 w-4 text-[rgb(59_130_246)]" />
             แชร์และคัดลอกง่าย
           </span>
         </div>
@@ -45,17 +45,17 @@ export function CreateReferralLinkCard({ referralUrl }: CreateReferralLinkCardPr
               <input
                 value={referralUrl}
                 readOnly
-                className="w-full rounded-xl border border-[#d6b98c]/60 bg-[#f8f3ea] px-4 py-3 text-sm font-medium text-[#1f3a68] shadow-inner focus:border-[#1f3a68] focus:ring-2 focus:ring-[#1f3a68]/20"
+                className="w-full rounded-xl border border-[rgb(59_130_246/0.5)] bg-[rgb(59_130_246/0.1)] px-4 py-3 text-sm font-medium text-[rgb(59_130_246)] shadow-inner focus:border-[rgb(59_130_246)] focus:ring-2 focus:ring-[rgb(59_130_246/0.2)]"
               />
-              <span className="absolute right-3 top-1/2 hidden -translate-y-1/2 text-xs font-medium text-indigo-400 lg:block">
+              <span className="absolute right-3 top-1/2 hidden -translate-y-1/2 text-xs font-medium text-[rgb(59_130_246)]/60 lg:block">
                 ใช้ลิงก์นี้เท่านั้น
               </span>
             </div>
             <button
               onClick={handleCopy}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#1f3a68] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[#1f3a68]/25 transition hover:bg-[#1b3157]"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[rgb(59_130_246)] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-[rgb(59_130_246/0.25)] transition hover:bg-[rgb(37_99_235)]"
             >
-              <Copy className="h-4 w-4" />
+              <Copy className="h-4 w-4 text-white" />
               {copied ? "คัดลอกแล้ว!" : "คัดลอกลิงก์"}
             </button>
           </div>

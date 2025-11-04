@@ -10,6 +10,12 @@
     color: #0f172a;
   }
 
+  html,
+  body,
+  #__next {
+    font-family: var(--font-noto-sans-thai), "Noto Sans Thai", system-ui, sans-serif !important;
+  }
+
   body {
     min-height: 100vh;
     background: radial-gradient(
@@ -18,8 +24,9 @@
       rgba(31, 58, 104, 0.08) 45%,
       rgba(198, 162, 105, 0.08) 78%
     );
-    font-family: var(--font-geist-sans), "Prompt", "system-ui", sans-serif;
+    font-family: var(--font-noto-sans-thai), "Noto Sans Thai", system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #0f172a;
   }
 
@@ -28,8 +35,28 @@
   h3,
   h4,
   h5,
+  h6,
+  p,
+  span,
+  div,
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  label,
+  li,
+  td,
+  th {
+    font-family: var(--font-noto-sans-thai), "Noto Sans Thai", system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
   h6 {
-    font-family: var(--font-geist-sans), "Prompt", "system-ui", sans-serif;
     color: #0f172a;
   }
 }

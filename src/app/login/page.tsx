@@ -92,7 +92,7 @@ export default function LoginPage() {
         transition={{ duration: 0.6 }}
         className="relative z-10 grid w-full max-w-6xl overflow-hidden rounded-[28px] bg-white shadow-[0_30px_80px_-48px_rgba(16,24,40,0.45)] lg:grid-cols-2"
       >
-        <div className="flex flex-col justify-center space-y-8 bg-gradient-to-br from-[#142033] via-[#182946] to-[#101b30] p-10 text-slate-100 lg:p-16">
+        <div className="flex flex-col justify-center space-y-8 bg-gradient-to-br from-[rgb(59_130_246)] via-[rgb(37_99_235)] to-[rgb(29_78_216)] p-10 text-white lg:p-16">
           <div className="flex items-center justify-center">
             <Image
               src="/images/logo_big.png"
@@ -137,13 +137,13 @@ export default function LoginPage() {
           </p>
 
           {user && (
-            <div className="mt-6 rounded-xl border border-indigo-100/70 bg-indigo-50/60 px-4 py-3 text-left text-xs text-indigo-700">
-              <p className="font-semibold text-indigo-800">
+            <div className="mt-6 rounded-xl border border-[rgb(59_130_246/0.3)] bg-[rgb(59_130_246/0.1)] px-4 py-3 text-left text-xs text-[rgb(59_130_246)]">
+              <p className="font-semibold text-[rgb(59_130_246)]">
                 ข้อมูลบัญชีของคุณ
               </p>
-              <p className="mt-1 text-indigo-600">{user.phoneNumber}</p>
+              <p className="mt-1 text-[rgb(59_130_246)]/80">{user.phoneNumber}</p>
               {getBankLabel(user.bank) && (
-                <p className="mt-1 text-indigo-500">
+                <p className="mt-1 text-[rgb(59_130_246)]/70">
                   {getBankLabel(user.bank)} {user.bankAccount}
                 </p>
               )}
@@ -155,7 +155,7 @@ export default function LoginPage() {
               <label className="flex flex-col gap-2">
                 <span className="text-sm font-medium text-slate-700">เบอร์โทรศัพท์</span>
                 <input
-                  className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 shadow-sm outline-none transition focus-border-[#1f3a68] focus:ring-2 focus:ring-[#1f3a68]/20"
+                  className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 shadow-sm outline-none transition focus:border-[rgb(59_130_246)] focus:ring-2 focus:ring-[rgb(59_130_246/0.2)]"
                   value={form.phoneNumber}
                   onChange={handleChange("phoneNumber")}
                   required
@@ -167,7 +167,7 @@ export default function LoginPage() {
                 <span className="text-sm font-medium text-slate-700">รหัสผ่าน</span>
                 <input
                   type="password"
-                  className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 shadow-sm outline-none transition focus:border-[#1f3a68] focus:ring-2 focus:ring-[#1f3a68]/20"
+                  className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 shadow-sm outline-none transition focus:border-[rgb(59_130_246)] focus:ring-2 focus:ring-[rgb(59_130_246/0.2)]"
                   value={form.password}
                   onChange={handleChange("password")}
                   required
@@ -190,7 +190,7 @@ export default function LoginPage() {
               whileHover={{ scale: 1.01 }}
               whileTap={{ scale: 0.99 }}
               type="submit"
-              className="mt-8 flex w-full items-center justify-center gap-3 rounded-2xl bg-[#1f3a68] py-3 text-lg font-semibold text-white shadow-lg shadow-[#1f3a68]/25 transition-all duration-300 hover:bg-[#1b3157] disabled:cursor-not-allowed disabled:opacity-70"
+              className="mt-8 flex w-full items-center justify-center gap-3 rounded-2xl bg-[rgb(59_130_246)] py-3 text-lg font-semibold text-white shadow-lg shadow-[rgb(59_130_246/0.25)] transition-all duration-300 hover:bg-[rgb(37_99_235)] disabled:cursor-not-allowed disabled:opacity-70"
               disabled={pending}
             >
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white">
@@ -200,7 +200,7 @@ export default function LoginPage() {
             </motion.button>
           </form>
 
-          <div className="mt-8 rounded-xl border border-[#d6b98c] bg-[#f8f3ea] px-4 py-3 text-center text-xs text-[#634f29]">
+          <div className="mt-8 rounded-xl border border-[rgb(59_130_246/0.5)] bg-[rgb(59_130_246/0.1)] px-4 py-3 text-center text-xs text-[rgb(59_130_246)]">
             ระบบนี้รองรับเฉพาะผู้แนะนำที่ได้รับการยืนยันให้ใช้งานจาก Legardy เท่านั้น
           </div>
 
@@ -208,7 +208,7 @@ export default function LoginPage() {
             ยังไม่มีบัญชี?{" "}
             <Link
               href="/register"
-              className="font-medium text-[#1f3a68] underline-offset-4 hover:underline"
+              className="font-medium text-[rgb(59_130_246)] underline-offset-4 hover:underline"
             >
               สมัครสมาชิก
             </Link>
